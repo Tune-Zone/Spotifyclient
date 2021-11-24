@@ -46,7 +46,7 @@ const Posts = () => {
 
     useEffect(() => {
         axios
-          .get("https://btpbackend.herokuapp.com/api/posts")
+          .get("https://tunezoneinfo.herokuapp.com/api/posts")
           .then((response) => {
             setPosts(response.data);
             window.history.pushState({}, null, "/posts");
@@ -73,7 +73,7 @@ const Posts = () => {
                             className= "img-thumbnail mb-3"
                             style={{height: "100px",width:"50%"}} 
                             />
-                            <img src={`https://btpbackend.herokuapp.com/api/post/photo/${post._id}`}
+                            <img src={`https://tunezoneinfo.herokuapp.com/api/post/photo/${post._id}`}
                             className= "img-thumbnail mb-3"
                             style={{height: "100px",width:"50%"}} 
                             />

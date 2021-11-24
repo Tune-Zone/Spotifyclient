@@ -53,7 +53,7 @@ const Remix = () => {
     let { track, post, accessToken } = useParams();
     useEffect(() => {
         axios
-          .get(`https://btpbackend.herokuapp.com/api/post/${post}`)
+          .get(`https://tunezoneinfo.herokuapp.com/api/post/${post}`)
           .then((response) => {
             setPosttitle(response.data.title);
             setPostbody(response.data.body);

@@ -55,7 +55,7 @@ const Tuneposts = () => {
 
     useEffect(() => {
         axios
-          .get("http://localhost:8000/getremix")
+          .get("https://spotifytzback.herokuapp.com/getremix")
           .then((response) => {
             setPosts(response.data);
             window.history.pushState({}, null, "/remixposts");

@@ -86,7 +86,7 @@ const Remix = () => {
         }
         console.log(postdetails);
         axios
-          .post("http://localhost:8000/createremix",postdetails)
+          .post("https://spotifytzback.herokuapp.com/createremix",postdetails)
           .then((response) => {
             console.log(response)
             window.history.pushState({}, null, "/remixposts");

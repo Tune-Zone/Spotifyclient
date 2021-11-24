@@ -1,5 +1,5 @@
 const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectUri = "http://spotifyclient.herokuapp.com/";
+const redirectUri = "https://spotifyclientapp.herokuapp.com/";
 const clientId = "fdcf5760de4a46f7a825ae4e1bc4a8ba";
 
 const scopes = [
